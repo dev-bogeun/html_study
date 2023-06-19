@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+</head>
+<body>
+	<form>
+		<div>
+			<h1>회원가입</h1>
+
+			<div>
+				<div style="float: left">
+				<ul>
+					<a>
+						 <a
+						href="https://www.facebook.com/login.php?skip_api_login=1&api_key=185853321610795&kid_directed_site=0&app_id=185853321610795&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.6%2Fdialog%2Foauth%3Fclient_id%3D185853321610795%26redirect_uri%3Dhttps%253A%252F%252Fohou.se%252Fusers%252Fauth%252Ffacebook%252Fcallback%26response_type%3Dcode%26scope%3Demail%26state%3Deee95441d87ec241f212b8af2c78f9be09016dcc474effa9%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D0f0a3fcb-3eab-4fa0-81ce-1a172b6047c1%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fohou.se%2Fusers%2Fauth%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Deee95441d87ec241f212b8af2c78f9be09016dcc474effa9%23_%3D_&display=page&locale=ko_KR&pl_dbl=0"
+						title="페이스북으로 가입하기"> <img src="facebook.png" width="48"
+							heigh="48" viewBox="0 0 48 48"> <g fill="none"
+								fill-fule="evenodd"> </g> </svg>
+						</a>
+					</a>
+				</ul>
+				</div>
+
+				<div style="float: left">
+				<ul>
+					<a> 
+						<a
+								href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fproxy%3DeasyXDM_Kakao_lcv0305tl4p_provider%26ka%3Dsdk%252F1.43.1%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fohou.se%26origin%3Dhttps%253A%252F%252Fohou.se%26response_type%3Dcode%26redirect_uri%3Dkakaojs%26state%3Duuonpau0dwhcqzfobqaeja%26through_account%3Dtrue%26client_id%3D3019c756ec77dd7e0a24e56d9d784f77&talk_login=hidden#login"
+								title="카카오로 가입하기"> <img src="kakao.png" width="48" heigh="48"
+								viewBox="0 0 48 48"> <g fill="none" fill-fule="evenodd">
+								</g> </svg>
+
+							</a>
+						</a>
+					</ul>
+				</div>
+
+				<div >
+					<ul>
+						<a> <a
+							href="https://nid.naver.com/oauth2.0/authorize?client_id=OwxOJX0gYfOostweRfGd&redirect_uri=https%3A%2F%2Fohou.se%2Fusers%2Fauth%2Fnaver%2Fcallback&response_type=code&state=5ab1e2382156d160aaf94b753d71071322de3fd50042c57b&svctype=0"
+							title="네이버로 가입하기"> <img src="naver.png" width="48"
+							heigh="48" viewBox="0 0 48 48"> <g fill="none"
+								fill-fule="evenodd"> </g> </svg>
+						</a>
+					</a>
+				</ul>
+				
+				</div>
+			</div>
+		</div>
+		
+
+			<div  >
+				<label>이메일</label> <input placeholder="이메일" size="7" value>
+				<label> <select>
+						<option value disabled>선택해주세요</option>
+						<option value="naver.com">naver.com</option>
+						<option value="hanmail.com">hanmail.com</option>
+						<option value="daum.com">daum.com</option>
+						<option value="gmail.com">gmail.com</option>
+						<option value="nate.com">nate.com</option>
+						<option value="hotmail.com">hotmail.com</option>
+				</select>
+				</label>
+			</div>
+
+
+		<div >
+			<button name="emailAuth" type="button">이메일 인증하기</button>
+		</div>
+
+		<!-- 비밀번호창 -->
+		<div>
+			<label>비밀번호</label>
+			<div>영문 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요</div>
+			<label> <input type="password" value field="[object Object]"
+				name="password" placeholder="비밀번호"> <span>비밀번호 입력하기</span>
+			</label>
+		</div>
+
+		<!-- 비밀번호 확인 -->
+		<div>
+			<label>비밀번호 확인</label>
+			<div></div>
+			<label> <input type="password" value field="[object Object]"
+				name="confirmPassword" placeholder="비밀번호 확인"> <span>입력한
+					비밀번호 확인하기</span>
+			</label>
+
+			<!-- 닉네임 -->
+			<div>
+				<label>닉네임</label>
+				<div>다른 유저와 겹치지 않도록 입력해주세요.(2~15자)</div>
+				<label> <input value field="[object Object]" name="nicname"
+					placeholder="별명(2~15자)"> <span>닉네임 입력하기</span>
+				</label>
+			</div>
+		</div>
+
+		<!-- 약관동의 -->
+		<div>
+			<label>약관동의</label>
+			<div>
+				<label>
+					<div>
+						<div>
+							<span> </span>
+						</div >
+						<input style="float: left"; type="checkbox" value="false" field="[object Object]"
+							name="agreeAll">
+					</div> <span> 전체동의 </span>
+				</label>
+			</div>
+
+			<div>
+				<label>
+					<div>
+						<div>
+							<span> </span>
+						</div>
+						<input style="float: left"; type="checkbox" value="false" field="[object Object]"
+							name="agree1">
+					</div> <span> 만 14세 미만입니다 </span>
+				</label>
+			</div>
+
+			<div>
+				<label>
+					<div>
+						<div>
+							<span> </span>
+						</div>
+						<input style="float: left"; style="float: left"; type="checkbox" value="false" field="[object Object]"
+							name="agree2">
+					</div> <span> 개인정보수집 및 이용동의 </span>
+				</label>
+			</div>
+		</div>
+
+		<div>
+			<label>
+				<div>
+					<div>
+						<span> </span>
+					</div>
+					<input style="float: left"; type="checkbox" value="false" field="[object Object]"
+						name="agree3">
+				</div> <span> 개인정보 마케팅 활용 동의(선택) </span>
+			</label>
+		</div>
+		</div>
+
+		<div>
+			<label>
+				<div>
+					<div>
+						<span> </span>
+					</div>
+					<input style="float: left"; type="checkbox" value="false" field="[object Object]"
+						name="agree4">
+				</div> <span> 이벤트,쿠폰,특가 알림 메일 및 SMS 등 수신(선택) </span>
+			</label>
+		</div>
+		</div>
+
+		<button type="submit">회원가입하기</button>
+	</form>
+	<p>
+		이미 아이디가 있으신가요? <a href="https://ohou.se/users/sign_in">로그인</a>
+	</p>
+</body>
+</html>
